@@ -1,0 +1,9 @@
+import { createHashRouter } from 'react-router';
+import Home from './routes/home';
+
+export const router = createHashRouter([
+	{
+		path: '/',
+		Component: Home
+	}
+]);

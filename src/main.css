@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+@import './styles/fonts/source-serif-4-v14-latin/font.css';
+@import './styles/fonts/inter-v20-latin/font.css';
+
+:root {
+	--font-serif: 'Source Serif 4', sans-serif;
+	--font-sans: 'Inter', ui-sans-serif, 'Segoe UI', 'Microsoft Yahei', sans-serif;
+}
+
+body {
+	@apply dark:bg-[#0c0c0c] dark:text-white;
+}
+
+p {
+	font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-serif);
+}
+
+a {
+	@apply text-neutral-400 underline dark:hover:text-neutral-200 hover:text-neutral-800;
+}
